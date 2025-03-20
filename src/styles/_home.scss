@@ -1,0 +1,65 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.hero {
+  @include m.flex-center;
+  height: v.$hero-height;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url("../assets/hero-bg.jpg") center/cover;
+  color: v.$white;
+  text-align: center;
+  padding: 0 20px;
+
+  .hero-text {
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .cta-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: v.$primary;
+      color: v.$white;
+      font-size: 1.1rem;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      text-decoration: none;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: v.$secondary;
+      }
+    }
+  }
+
+  @include m.responsive(medium) {
+    .hero-text {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @include m.responsive(small) {
+    .hero-text {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

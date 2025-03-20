@@ -1,18 +1,15 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './Header.css';
+import React from "react";
+import "../../styles/header.scss";
 
 const Header = () => {
   return (
     <header>
-      <div className="logo">Justin Acheaibi</div>
       <nav>
+        <div className="logo">Mon Portfolio</div>
         <ul>
-          <li><NavLink end to="/">Accueil</NavLink></li>
-          <li><NavLink to="/about">À propos</NavLink></li>
-          <li><NavLink to="/skills">Compétences</NavLink></li>
-          <li><NavLink to="/projects">Projets</NavLink></li>
-          <li><NavLink to="/contact">Contact</NavLink></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>

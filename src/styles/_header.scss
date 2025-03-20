@@ -1,0 +1,51 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+header {
+  background-color: v.$primary;
+  color: v.$white;
+  height: v.$navbar-height;
+  @include m.flex-center;
+  padding: 0 20px;
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+
+      li {
+        a {
+          text-decoration: none;
+          color: v.$white;
+          font-size: 1rem;
+          transition: color 0.3s ease-in-out;
+
+          &:hover {
+            color: v.$secondary;
+          }
+        }
+      }
+    }
+  }
+
+  @include m.responsive(medium) {
+    nav {
+      flex-direction: column;
+      ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+}

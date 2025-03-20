@@ -1,0 +1,39 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.projects {
+  padding: 50px 20px;
+  background-color: v.$primary;
+  color: v.$white;
+  text-align: center;
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: v.$secondary;
+  }
+
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  @include m.responsive(medium) {
+    h2 {
+      font-size: 2rem;
+    }
+
+    .project-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

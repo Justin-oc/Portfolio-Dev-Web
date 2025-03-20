@@ -1,0 +1,86 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.project-card {
+  background-color: v.$primary;
+  color: v.$white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  max-width: 350px;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid v.$secondary;
+  }
+
+  .project-content {
+    padding: 15px;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: v.$secondary;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    .technologies {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 15px;
+
+      .tech {
+        background-color: lighten(v.$secondary, 10%);
+        color: v.$primary;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.85rem;
+        font-weight: bold;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      .btn {
+        display: inline-block;
+        padding: 8px 12px;
+        background-color: v.$secondary;
+        color: v.$white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+          background-color: darken(v.$secondary, 10%);
+        }
+      }
+    }
+  }
+}
+
+@include m.responsive(medium) {
+  .project-card {
+    max-width: 100%;
+  }
+}

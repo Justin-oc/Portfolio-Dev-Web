@@ -1,47 +1,61 @@
-import React, { useState } from 'react';
-import './Contact.css';
+import React from "react";
+import { useForm } from "react-hook-form";
+import "../../styles/contact.scss";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Ici, tu pourras intégrer l'envoi du formulaire via une API ou un service tiers
-    console.log(formData);
-    alert('Message envoyé !');
-    setFormData({ name: '', email: '', message: '' });
+  const onSubmit = (data) => {
+    console.log("Formulaire soumis avec :", data);
+    alert("Votre message a bien été envoyé !");
   };
 
   return (
     <section className="contact">
-      <h2>Contact</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Nom :
-          <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-        </label>
-        <label>
-          Email :
-          <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-        </label>
-        <label>
-          Message :
-          <textarea name="message" value={formData.message} onChange={handleChange} required></textarea>
-        </label>
-        <button type="submit">Envoyer</button>
-      </form>
+      <div className="container">
+        <h2>Contactez-moi</h2>
+        <p>N'hésitez pas à me laisser un message, je vous répondrai dès que possible.</p>
+
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <div className="form-group">
+            <label htmlFor="name">Nom</label>
+            <input
+              id="name"
+              type="text"
+              {...register("name", { required: "Le nom est obligatoire" })}
+            />
+            {errors.name && <span className="error">{errors.name.message}</span>}
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              {...register("email", { 
+                required: "L'email est obligatoire",
+                pattern: {
+                  value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                  message: "Format d'email invalide"
+                }
+              })}
+            />
+            {errors.email && <span className="error">{errors.email.message}</span>}
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              {...register("message", { required: "Le message est obligatoire" })}
+            />
+            {errors.message && <span className="error">{errors.message.message}</span>}
+          </div>
+
+          <button type="submit" className="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
     </section>
   );
 };
