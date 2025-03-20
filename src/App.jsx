@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header/Header.jsx';
-import Footer from './components/Footer/Footer.jsx';
-import Home from './components/Home/Home.jsx';
-import About from './components/About/About.jsx';
-import Skills from './components/Skills/Skills.jsx';
-import Projects from './components/Projects/Projects.jsx';
-import Contact from './components/Contact/Contact.jsx';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import Home from './components/Home.jsx';
+import About from './components/About.jsx';
+import Skills from './components/Skills.jsx';
+import Projects from './components/Projects.jsx';
+import Contact from './components/Contact.jsx';
 import './styles/main.scss';
 
 function App() {
