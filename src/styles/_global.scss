@@ -1,4 +1,4 @@
-@use "variables" as v;
+@use "../styles/variables" as v;
 
 * {
   margin: 0;
@@ -28,7 +28,7 @@ a {
   transition: color 0.3s ease-in-out;
 
   &:hover {
-    color: lighten(v.$secondary, 15%);
+    color: color.adjust(v.$secondary, $lightness: 15%);
   }
 }
 

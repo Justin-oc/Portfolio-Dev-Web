@@ -1,5 +1,5 @@
-@use "variables" as v;
-@use "mixins" as m;
+@use "../styles/variables" as v;
+@use "../styles/mixins" as m;
 
 .project-card {
   background-color: v.$primary;
@@ -46,7 +46,7 @@
       margin-bottom: 15px;
 
       .tech {
-        background-color: lighten(v.$secondary, 10%);
+        background-color: color.adjust(v.$secondary, $lightness: 10%);
         color: v.$primary;
         padding: 5px 10px;
         border-radius: 5px;
@@ -72,7 +72,7 @@
         transition: background-color 0.3s ease-in-out;
 
         &:hover {
-          background-color: darken(v.$secondary, 10%);
+          background-color: color.adjust(v.$secondary, $lightness: -10%);
         }
       }
     }
