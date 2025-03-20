@@ -7,8 +7,8 @@ const About = () => {
       <div className="container">
         <h2>À propos de moi</h2>
         <p>
-          Je suis un développeur front-end passionné, spécialisé en React et en
-          développement web moderne. J'aime créer des interfaces interactives,
+          Je suis un développeur front-end passionné, je suis à l'aise en React et efficace dans
+          le développement de sites web moderne. J'aime créer des interfaces interactives,
           performantes et accessibles.
         </p>
 
@@ -17,9 +17,10 @@ const About = () => {
           <div className="about-text">
             <h3>Mon parcours</h3>
             <p>
-              J'ai commencé le développement web il y a quelques années et j'ai
-              rapidement été attiré par les technologies modernes comme React,
-              Sass et Bootstrap.
+            Fort d'une expérience en aide-soignant qui m'a permis de développer un excellent relationnel,
+            une grande adaptabilité et une soif constante d'apprendre, j'ai relevé le défi d'une reconversio
+            en développement web, une passion concrétisée par ma formation chez OpenClassrooms. 
+            Disponible dès avril 2025, je suis prêt à mettre mes compétences à votre service.
             </p>
             <h3>Mes compétences</h3>
             <ul>

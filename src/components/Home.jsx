@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "@styles/home.scss";
 import { motion } from "framer-motion";
 
@@ -14,7 +15,7 @@ const Home = () => {
           Bienvenue sur mon Portfolio
         </motion.h1>
         <p>Développeur Front-End passionné</p>
-        <a href="#projects" className="cta-button">Voir mes projets</a>
+        <Link to="/projects" className="cta-button">Voir mes projets</Link>
       </div>
     </section>
   );
