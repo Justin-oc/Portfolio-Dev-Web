@@ -20,23 +20,6 @@
       font-size: 1.2rem;
       margin-top: 10px;
     }
-
-    .cta-button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: v.$primary;
-      color: v.$white;
-      font-size: 1.1rem;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease-in-out;
-      text-decoration: none;
-      border-radius: 5px;
-
-      &:hover {
-        background-color: v.$secondary;
-      }
-    }
   }
 
   @include m.responsive(medium) {
