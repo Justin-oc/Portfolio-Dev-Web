@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../styles/projectCard.scss";
+import "@styles/projectCard.scss";
 
 const ProjectCard = ({ project }) => {
   return (

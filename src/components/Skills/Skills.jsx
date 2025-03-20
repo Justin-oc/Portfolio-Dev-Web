@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/skills.scss";
+import "@styles/skills.scss";
 
 const skillsData = [
   { name: "HTML", level: "90%" },

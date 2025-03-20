@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import "../../styles/contact.scss";
+import "@styles/contact.scss";
 
 const Contact = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
