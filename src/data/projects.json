@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "Site de voyage",
+      "description": "Réalisation d’un site de voyage en HTML et CSS.",
+      "image": "https://via.placeholder.com/300x200.png?text=Projet+1",
+      "technologies": ["HTML", "CSS"],
+      "live": "https://example.com/projet1",
+      "code": "https://github.com/username/projet1"
+    },
+    {
+      "id": 2,
+      "title": "Page dynamique",
+      "description": "Création d’une page web dynamique en JavaScript.",
+      "image": "https://via.placeholder.com/300x200.png?text=Projet+2",
+      "technologies": ["JavaScript"],
+      "live": "https://example.com/projet2",
+      "code": "https://github.com/username/projet2"
+    },
+    {
+      "id": 3,
+      "title": "Application immobilière",
+      "description": "Création d’une app de location immobilière avec React.",
+      "image": "https://via.placeholder.com/300x200.png?text=Projet+3",
+      "technologies": ["React", "React Router"],
+      "live": "https://example.com/projet3",
+      "code": "https://github.com/username/projet3"
+    },
+    {
+      "id": 4,
+      "title": "Back-end de site de notation",
+      "description": "Création du back-end d’un site de notation de livres avec Node.js et Express.",
+      "image": "https://via.placeholder.com/300x200.png?text=Projet+4",
+      "technologies": ["Node.js", "Express", "MongoDB"],
+      "live": "https://example.com/projet4",
+      "code": "https://github.com/username/projet4"
+    }
+  ]
