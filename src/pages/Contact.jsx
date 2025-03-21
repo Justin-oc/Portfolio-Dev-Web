@@ -1,13 +1,25 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 import "@styles/contact.scss";
 
 const Contact = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
-    console.log("Formulaire soumis avec :", data);
-    alert("Votre message a bien été envoyé !");
+    emailjs
+      .send("service_b0qwegm", "template_vqq2u85", data, "8U-UcVZf1SBXija1O")
+      .then(
+        (result) => {
+          console.log("Message envoyé :", result.text);
+          alert("Votre message a bien été envoyé !");
+          reset();
+        },
+        (error) => {
+          console.error("Erreur lors de l'envoi :", error.text);
+          alert("Une erreur est survenue lors de l'envoi, veuillez réessayer.");
+        }
+      );
   };
 
   return (
