@@ -8,8 +8,8 @@ const Contact = () => {
 
   const onSubmit = (data) => {
     emailjs
-      .send("import.meta.env.VITE_SERVICE_ID", "import.meta.env.VITE_TEMPLATE_ID", 
-            data, "import.meta.env.VITE_USER_ID")
+      .send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, 
+            data, import.meta.env.VITE_USER_ID)
       .then(
         (result) => {
           console.log("Message envoyé :", result.text);
