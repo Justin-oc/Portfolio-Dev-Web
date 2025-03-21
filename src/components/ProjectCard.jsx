@@ -15,7 +15,9 @@ const ProjectCard = ({ project }) => {
           ))}
         </div>
         <div className="buttons">
+          {project.live && (
           <a href={project.live} target="_blank" rel="noopener" className="btn">Voir le site</a>
+          )}
           <a href={project.code} target="_blank" rel="noopener" className="btn">Voir le code</a>
         </div>
       </div>
@@ -29,7 +31,7 @@ ProjectCard.propTypes = {
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
-    live: PropTypes.string.isRequired,
+    live: PropTypes.string,
     code: PropTypes.string.isRequired
   }).isRequired
 };

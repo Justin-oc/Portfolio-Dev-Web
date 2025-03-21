@@ -5,7 +5,7 @@
       "description": "Réalisation d’un site de voyage.",
       "image": "/images/site_booki.png",
       "technologies": ["HTML", "CSS"],
-      "live": "https://example.com/projet2",
+      "live": "https://booki-site.vercel.app/",
       "code": "https://github.com/justin-oc/projet_2"
     },
     {
@@ -14,7 +14,7 @@
       "description": "Création d'un site pour une architecte d'intérieure",
       "image": "/images/sophie_bluel.png",
       "technologies": ["Javascript"],
-      "live": "https://example.com/projet3",
+      "live": "https://sophie-bluel-js.vercel.app/",
       "code": "https://github.com/Justin-oc/P3"
     },
     {
@@ -23,7 +23,7 @@
       "description": "Augmenter l'accessibilité et les performances d'un site de photographie",
       "image": "/images/nina_carducci.png",
       "technologies": ["SEO", "Accessibilité"],
-      "live": "https://example.com/projet4",
+      "live": "https://nina-carducci-debogage.vercel.app/",
       "code": "https://github.com/Justin-oc/P4"
     },
     {
@@ -32,7 +32,7 @@
       "description": "Création d'une application de location immobilière.",
       "image": "/images/app_kasa.png",
       "technologies": ["React", "Vite"],
-      "live": "https://example.com/projet5",
+      "live": "https://react-app-kasa.vercel.app/",
       "code": "https://github.com/Justin-oc/P5"
     },
     {
@@ -41,7 +41,6 @@
       "description": "Création du backend d'un site de notation de livres et gestion de la base de données",
       "image": "/images/mon_vieux_grimoire.png",
       "technologies": ["Node", "Express", "MongoDB"],
-      "live": "https://example.com/projet6",
       "code": "https://github.com/Justin-oc/P6"
     }
   ]
