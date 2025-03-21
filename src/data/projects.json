@@ -2,19 +2,46 @@
     {
       "id": 1,
       "title": "Site de voyage",
-      "description": "Réalisation d’un site de voyage en HTML et CSS.",
-      "image": "https://via.placeholder.com/300x200.png?text=Projet+1",
+      "description": "Réalisation d’un site de voyage.",
+      "image": "../public/images/site_booki.png",
       "technologies": ["HTML", "CSS"],
-      "live": "https://example.com/projet1",
-      "code": "https://github.com/username/projet1"
+      "live": "https://example.com/projet2",
+      "code": "https://github.com/justin-oc/projet_2"
     },
     {
       "id": 2,
-      "title": "Page dynamique",
-      "description": "Création d’une page web dynamique en JavaScript.",
-      "image": "https://via.placeholder.com/300x200.png?text=Projet+2",
-      "technologies": ["JavaScript"],
-      "live": "https://example.com/projet2",
-      "code": "https://github.com/username/projet2"
+      "title": "Page web dynamique",
+      "description": "Création d'un site pour une architecte d'intérieure",
+      "image": "../public/images/sophie_bluel.png",
+      "technologies": ["Javascript"],
+      "live": "https://example.com/projet3",
+      "code": "https://github.com/Justin-oc/P3"
+    },
+    {
+      "id": 3,
+      "title": "Débogage d'un site",
+      "description": "Augmenter l'accessibilité et les performances d'un site de photographie",
+      "image": "../public/images/nina_carducci.png",
+      "technologies": ["SEO", "Accessibilité"],
+      "live": "https://example.com/projet4",
+      "code": "https://github.com/Justin-oc/P4"
+    },
+    {
+      "id": 4,
+      "title": "Application React",
+      "description": "Création d'une application de location immobilière.",
+      "image": "../public/images/app_kasa.png",
+      "technologies": ["React", "Vite"],
+      "live": "https://example.com/projet5",
+      "code": "https://github.com/Justin-oc/P5"
+    },
+    {
+      "id": 5,
+      "title": "Mise en place du backend d'un site",
+      "description": "Création du backend d'un site de notation de livres et gestion de la base de données",
+      "image": "../public/images/mon_vieux_grimoire.png",
+      "technologies": ["Node", "Express", "MongoDB"],
+      "live": "https://example.com/projet6",
+      "code": "https://github.com/Justin-oc/P6"
     }
   ]
