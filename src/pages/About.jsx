@@ -17,7 +17,7 @@ const About = () => {
         </p>
 
         <div className="about-content">
-          <img src="./public/images/photo_justin.jpg" alt="photographie de Justin" className="profile-pic" />
+          <img src="/public/images/photo_justin.jpg" alt="photographie de Justin" className="profile-pic" />
           <div className="about-text">
             <h3>Mon parcours</h3>
             <p>
