@@ -22,6 +22,7 @@ const Contact = () => {
         }
       );
   };
+  console.log(import.meta.env)
 
   return (
     <section className="contact">
