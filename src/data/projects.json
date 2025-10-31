@@ -49,7 +49,7 @@
       "description": "Site vitrine réalisé pour une photographe professionnelle. Le site présente les différents univers de la photographe (portraits, mariages, animaux…) à travers une interface élégante et responsive. Il est conçu avec React et connecté à un WordPress headless via l’API REST.",
       "image": "/images/site-fanny.png",
       "technologies": ["React", "Sass", "API REST", "React Router"],
-      "live" : "https://fannydutouquet.fr/",
+      "live" : "https://site-de-fanny-dutouquet.vercel.app/",
       "code": "https://github.com/Justin-oc/Site-de-Fanny-Dutouquet"
     }
   ]
